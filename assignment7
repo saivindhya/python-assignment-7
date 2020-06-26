@@ -1,0 +1,45 @@
+str=input("Enter string")
+str2=str[::-1]
+print(str2)
+
+
+l1=[]
+print("!!!enter done to stop giving input:!!!")
+while True:
+    n=input("Enter number:")
+    if n=='done':
+        break
+    else:
+        x=int(n)
+        l1.append(x)
+print(l1)
+ec=0
+oc=0
+for i in l1:
+    if i%2==0:
+        ec=ec+1
+    else:
+        oc=oc+1
+print("even numbers count=",ec,"\nodd number count=",oc)
+
+
+for i in range(0,7):
+    if i==3 or i==6:
+        continue
+    print(i)
+
+
+n1=int(input("Enter number:"))
+n2=int(input("Enter number:"))
+if n1>n2:
+    b=n1
+    s=n2
+else:
+    b=n2
+    s=n1
+while b>s:
+    if(b>s):
+        b=b-s
+    else:
+        s=s-b
+print(b)
